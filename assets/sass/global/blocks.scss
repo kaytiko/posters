@@ -1,0 +1,8 @@
+.container {
+    // max-width: var(--bgdesktop-width);
+    // max-width: rem(1200px);
+    grid-template-columns: rem(70px) rem(520px) rem(130px) rem(650px) rem(70px);
+    padding: 0 var(--desktop-pads);
+    // padding: 0 rem(20px);
+    margin: auto;
+}

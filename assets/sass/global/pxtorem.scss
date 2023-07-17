@@ -1,0 +1,14 @@
+$root-font-size: 16px;
+$viewport-vidth: 1400px;
+
+@function rem($size) {
+  @return calc($size / $root-font-size * 1rem);
+  // @return calc($size / ($viewport-vidth / 100) * 1vw);
+}
+
+
+
+@function vw($size) {
+  @return calc($size / ($viewport-vidth / 100) * 1vw);
+  // @return calc(var(--scale) * $size);
+}

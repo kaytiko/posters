@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import "global/reset.scss";
+@import "global/variables.scss";
+@import "global/pxtorem.scss";
+@import "global/mixin.scss";
+@import "global/blocks.scss";
+@import "global/global.scss";
+
+@import "blocks/common/header.scss";
+@import "blocks/common/footer.scss";
+
+@import "blocks/main.scss";
+@import "blocks/poster.scss";
+@import "blocks/card.scss";
+@import "blocks/subscribe.scss";

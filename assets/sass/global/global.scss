@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--main-orange);
+}
+
+body {
+    background-color: var(--bg-gray);
+    font-family: var(--inter);
+    font-weight: 400;
+    font-size: rem(13px);
+    font-display: swap;
+    color: white;
+    scrollbar-gutter: stable;
+    overscroll-behavior: auto;
+
+    @include desktop {
+        font-size: vw(13px);
+    }
+
+    opacity: 0;
+    transition: var(--slow);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
